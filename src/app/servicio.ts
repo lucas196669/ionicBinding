@@ -1,6 +1,10 @@
-import { Service } from '@angular/core';
+import { Injectable, Service } from '@angular/core';
+import { Usuario } from './usuario';
 
-@Service()
+@Injectable({
+providedIn: 'root'
+})
+
 export class Servicio {
     private users: Usuario[] = [
         { id: 1, nombre: 'Lucas', email: 'Lucas@gmail.com', activo: true },
